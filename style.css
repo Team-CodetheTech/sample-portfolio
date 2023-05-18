@@ -8,7 +8,6 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #f8f8f8;
-    overflow: hidden;
 }
 
 :root{
@@ -222,11 +221,11 @@ nav .fa-solid{
         
     }
 
-    nav ul {
+    .navigation nav ul {
         background: var(--clr-primary);
-        position: absolute;
-        top: -20px;
-        right: -400px;
+        position: fixed;
+        top: 0;
+        right: -300px;
         width: 60vw;
         height: 100vh;
         padding-top: 50px;
@@ -234,6 +233,8 @@ nav .fa-solid{
         transition: right 0.5s;
         flex-direction: column;
         color: #fff;
+        margin-right: 0;
+        margin-top: 0;
       }
 
       .navigation ul li a::after{
