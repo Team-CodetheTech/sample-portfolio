@@ -206,6 +206,9 @@ span{
 }
 
 /* -----------------Responsiveness for Smaller Screen Sizes----------------- */
+nav .fa-solid{
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
     nav .fa-solid{
