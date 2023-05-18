@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #f8f8f8;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 :root{
