@@ -4,6 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #f8f8f8;
+    overflow-x: hidden;
 }
 
 :root{
@@ -52,10 +53,6 @@ span{
 .navigation nav ul li{
     margin: 10px;
     font-size: 18px;
-
-}
-.navigation nav ul li + li{
-    margin-left: 40px;
 
 }
 
@@ -210,3 +207,73 @@ span{
 
 /* -----------------Responsiveness for Smaller Screen Sizes----------------- */
 
+@media screen and (max-width: 600px) {
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        margin-right: 20px;
+        
+    }
+
+    nav ul {
+        background: var(--clr-primary);
+        position: absolute;
+        top: -20px;
+        right: -400px;
+        width: 60vw;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        flex-direction: column;
+        color: #fff;
+      }
+
+      .navigation ul li a::after{
+        background-color: #fff;
+      }
+    nav ul li{
+        display: block;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .navigation ul li a{
+        color: #fff;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /* About Me Section */
+    .about-me{
+        height: auto;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .about-txt h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .about-txt p{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+
+    /* Projects Section */
+    .container{
+        flex-direction: column;
+    }
+
+    .project-box, .skill-box, .cert-box{
+        margin-bottom: 20px;
+    }
+}

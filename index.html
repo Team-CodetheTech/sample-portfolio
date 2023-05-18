@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shreeya Rani</title>
   <link rel="stylesheet" href="style.css">
 
@@ -16,12 +18,14 @@
       <h2>Shreeya <span>Rani</span></h2>
     </div>
     <nav>
-      <ul>
+      <ul id="sidemenu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Certificates</a></li>
+        <i class="fa-solid fa-xmark " onclick="closemenu()"></i>
       </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
   </div>
 
@@ -131,16 +135,25 @@
         <img src="https://dummyimage.com/300x200/000/fff" alt="Certificate">
         <p>Certificate 1</p>
       </div>
-            <div class="cert-box">
+      <div class="cert-box">
         <img src="https://dummyimage.com/300x200/000/fff" alt="Certificate">
         <p>Certificate 1</p>
       </div>
-            <div class="cert-box">
-        <img src="https://dummyimage.com/300x200/000/fff" alt="Certificate">
-        <p>Certificate 1</p>
-      </div>
+            
     </div>
   </div>
   
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "-30px";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-400px";
+    }
+</script>
 </body>
 </html>
