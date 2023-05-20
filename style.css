@@ -97,7 +97,7 @@ span{
     font-size: 30px;
 }
 
-.about-icon i{
+.about-icon a i{
     font-size: 35px;
     margin: 10px
 }
@@ -107,6 +107,15 @@ span{
     height: 100%;
 }
 
+.about-icon a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.about-icon a:hover{
+    color: var(--clr-primary);
+}
 /* ----------------My Projects---------------- */
 
 .projects{
