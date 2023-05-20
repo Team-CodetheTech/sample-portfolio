@@ -303,3 +303,45 @@ nav .fa-solid{
         margin-bottom: 20px;
     }
 }
+
+/* ---------------Responsiveness for tabs---------------------- */
+
+@media screen and (max-width: 900px) and (min-width: 650px){
+
+    .about-img img {
+        width: 95%;
+        height: 100%;
+    }
+
+    .about-me{
+        height: 45vh;
+    }
+
+    .about-txt{
+        margin-left: 10px;
+    }
+
+    .about-txt h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .about-txt p {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .project-box, .cert-box, .skill-box {
+        width: 40%;
+        margin: 10px;
+      }
+
+}
