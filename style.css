@@ -208,6 +208,24 @@ span{
     font-weight: 600;
 }
 
+/* -------------------footer------------------ */
+
+footer .about-icon{
+    display: flex;
+    justify-content: center;
+}
+
+footer .about-icon i{
+    font-size: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+}
 /* -----------------Responsiveness for Smaller Screen Sizes----------------- */
 nav .fa-solid{
     display: none;
